@@ -20,7 +20,7 @@ const Kontak = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: contactLinks.linkedin.replace('https://www.', ''),
+      value: contactLinks.linkedin.replace('https://www.', '').replace(/\/$/, ''),
       href: contactLinks.linkedin,
     },
     {
