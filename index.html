@@ -12,6 +12,19 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Dimas Bagus Prasetyo</title>
+    <!-- pasang tema sebelum render biar tidak kedip -->
+    <script>
+      (function () {
+        var theme;
+        try {
+          theme = localStorage.getItem('theme');
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      })();
+    </script>
   </head>
   <body class="font-inter">
     <div id="root"></div>
