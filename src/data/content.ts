@@ -149,6 +149,7 @@ export const content: Record<Lang, Content> = {
       paragraphs: [
         'Saya seorang Frontend Web Developer yang senang mengubah desain menjadi antarmuka web yang hidup, rapi, dan nyaman digunakan. Bagi saya, tampilan yang bagus harus berjalan seiring dengan performa yang cepat dan kode yang mudah dirawat.',
         'Sehari-hari saya bekerja dengan React, TypeScript, dan Tailwind CSS. Saya terbiasa berkolaborasi dengan desainer dan backend developer, mulai dari menerjemahkan desain Figma hingga mengintegrasikan REST API.',
+        'Di era ketika AI semakin menjadi bagian dari dunia pengembangan perangkat lunak, saya turut beradaptasi dengan memanfaatkannya sebagai alat bantu untuk mempercepat pekerjaan yang bersifat repetitif, dengan tetap berpijak pada fondasi pemahaman frontend yang kuat. Keputusan teknis, struktur kode, dan kualitas akhir tetap berada di tangan saya, sehingga hasil yang diberikan tetap terukur dan dapat dipertanggungjawabkan.',
       ],
       highlights: [
         {
@@ -281,6 +282,7 @@ export const content: Record<Lang, Content> = {
       paragraphs: [
         "I'm a Frontend Web Developer who enjoys turning designs into lively, clean, and comfortable web interfaces. To me, a good-looking UI has to go hand in hand with fast performance and maintainable code.",
         'Day to day I work with React, TypeScript, and Tailwind CSS. I am used to collaborating with designers and backend developers, from translating Figma designs to integrating REST APIs.',
+        'As AI becomes an increasingly integral part of software development, I have adapted by using it as a supporting tool to speed up repetitive tasks, while staying grounded in a solid foundation of frontend development. Technical decisions, code structure, and final quality remain my responsibility, so the work I deliver stays reliable and accountable.',
       ],
       highlights: [
         {
