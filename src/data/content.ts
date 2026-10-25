@@ -119,9 +119,9 @@ export const projects = [
 export type ProjectId = (typeof projects)[number]['id'];
 
 export const contactLinks = {
-  email: 'dimas@example.com', // TODO: ganti email
-  linkedin: 'https://www.linkedin.com/in/username', // TODO: ganti url linkedin
-  github: 'https://github.com/dimasbp17', // TODO: pastikan username github benar
+  email: 'dimasbp.tech@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/dimas-bagus-prasetyo-528a7b2a0/',
+  github: 'https://github.com/dimasbp17',
 };
 
 export const content: Record<Lang, Content> = {
