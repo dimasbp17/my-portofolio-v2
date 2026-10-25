@@ -12,20 +12,21 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.14",
+    "@tsparticles/engine": "^4.4.0",
+    "@tsparticles/preset-firefly": "^4.4.0",
+    "@tsparticles/react": "^4.4.0",
     "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
+    "i18next": "^26.0.8",
     "lucide-react": "^0.545.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-i18next": "^16.0.1",
     "react-router-dom": "^7.9.4",
-    "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.14",
-    "tsparticles": "^3.9.1",
-    "tsparticles-preset-firefly": "^2.12.0"
+    "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

@@ -4,7 +4,12 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["node", "react", "react-dom"]
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+      "@tsparticles/engine"
+    ]
   },
   "files": [],
   "references": [
