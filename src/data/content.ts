@@ -185,7 +185,7 @@ export const content: Record<Lang, Content> = {
     },
     experience: {
       title: 'Pengalaman',
-      subtitle: 'Perjalanan karier saya sejauh ini.',
+      subtitle: 'Riwayat profesional dan kontribusi saya di setiap peran.',
       items: [
         // urutan: terbaru di atas
         {
@@ -193,10 +193,10 @@ export const content: Record<Lang, Content> = {
           company: 'CV Segitiga Sama Sisi',
           period: 'Februari 2025 – Sekarang',
           points: [
-            'Membangun Sistem Peringatan Dini (Early Warning System) dari nol, mulai dari struktur proyek hingga antarmuka siap pakai.',
-            'Membangun sistem informasi untuk Dinas Perhubungan.',
-            'Mengembangkan fitur-fitur baru pada Sistem Penomoran Penyiaran.',
-            'Melakukan maintenance sistem LPTKDN, termasuk perbaikan bug dan penyesuaian fitur agar aplikasi tetap stabil.',
+            'Merancang dan mengembangkan frontend Early Warning System dari tahap awal, meliputi arsitektur proyek, komponen antarmuka, hingga rilis ke produksi.',
+            'Mengembangkan antarmuka sistem informasi untuk Dinas Perhubungan sesuai kebutuhan operasional instansi.',
+            'Mengimplementasikan fitur baru pada Sistem Penomoran Penyiaran untuk mendukung proses bisnis yang terus berkembang.',
+            'Bertanggung jawab atas pemeliharaan sistem LPTKDN, mencakup perbaikan bug dan penyempurnaan fitur untuk menjaga stabilitas aplikasi.',
           ],
           tech: ['React', 'TypeScript'],
         },
@@ -205,8 +205,8 @@ export const content: Record<Lang, Content> = {
           company: 'Sofyan Corporation',
           period: 'Februari 2024 – November 2024',
           points: [
-            'Membangun Learning Management System (LMS) untuk sekolah sebagai sarana pembelajaran online.',
-            'Membangun aplikasi internal perusahaan menggunakan Next.js.',
+            'Mengembangkan frontend Learning Management System (LMS) untuk mendukung kegiatan pembelajaran daring di sekolah.',
+            'Membangun aplikasi internal perusahaan berbasis Next.js untuk mendukung operasional tim.',
           ],
           tech: ['React', 'Next.js', 'TypeScript'],
         },
@@ -317,7 +317,7 @@ export const content: Record<Lang, Content> = {
     },
     experience: {
       title: 'Experience',
-      subtitle: 'My career journey so far.',
+      subtitle: 'My professional background and contributions in each role.',
       items: [
         // order: newest first
         {
@@ -325,10 +325,10 @@ export const content: Record<Lang, Content> = {
           company: 'CV Segitiga Sama Sisi',
           period: 'February 2025 – Present',
           points: [
-            'Built an Early Warning System from scratch, from project structure to a production-ready interface.',
-            'Built an information system for the Department of Transportation (Dinas Perhubungan).',
-            'Developed new features for the Broadcasting Numbering System.',
-            'Maintained the LPTKDN system, including bug fixes and feature adjustments to keep the application stable.',
+            'Designed and developed the frontend of an Early Warning System from the ground up, covering project architecture, UI components, and production release.',
+            'Developed the interface of an information system for the Department of Transportation (Dinas Perhubungan) based on its operational needs.',
+            'Implemented new features in the Broadcasting Numbering System to support evolving business processes.',
+            'Maintained the LPTKDN system, handling bug fixes and feature improvements to ensure application stability.',
           ],
           tech: ['React', 'TypeScript'],
         },
@@ -337,8 +337,8 @@ export const content: Record<Lang, Content> = {
           company: 'Sofyan Corporation',
           period: 'February 2024 – November 2024',
           points: [
-            'Built a Learning Management System (LMS) for schools to support online learning.',
-            'Built an internal company application using Next.js.',
+            'Developed the frontend of a Learning Management System (LMS) to support online learning in schools.',
+            'Built an internal company application with Next.js to support team operations.',
           ],
           tech: ['React', 'Next.js', 'TypeScript'],
         },
