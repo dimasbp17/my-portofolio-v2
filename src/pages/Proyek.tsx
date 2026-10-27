@@ -95,6 +95,7 @@ const Proyek = () => {
               {...t.projects.items[project.id]}
               tech={project.tech}
               gradient={project.gradient}
+              image={'image' in project ? project.image : undefined}
               demo={'demo' in project ? project.demo : undefined}
               code={'code' in project ? project.code : undefined}
               demoLabel={t.projects.demo}

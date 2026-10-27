@@ -78,13 +78,6 @@ export const projects = [
     code: 'https://github.com/dimasbp17',
   },
   {
-    id: 'notes',
-    category: 'personal',
-    tech: ['React', 'TypeScript', 'Framer Motion'],
-    gradient: 'from-amber-500 to-orange-400',
-    code: 'https://github.com/dimasbp17',
-  },
-  {
     id: 'news',
     category: 'professional',
     tech: ['Next.js', 'TypeScript', 'REST API'],
@@ -92,26 +85,20 @@ export const projects = [
     demo: 'https://example.com',
   },
   {
-    id: 'landing',
+    id: 'tahu-kocek',
     category: 'personal',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-    gradient: 'from-rose-500 to-pink-400',
-    demo: 'https://example.com',
-    code: 'https://github.com/dimasbp17',
-  },
-  {
-    id: 'weather',
-    category: 'personal',
-    tech: ['React', 'Axios', 'OpenWeather API'],
-    gradient: 'from-sky-500 to-indigo-400',
-    demo: 'https://example.com',
-    code: 'https://github.com/dimasbp17',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Motion'],
+    gradient: 'from-orange-500 to-red-500',
+    image: '/assets/images/projects/tahu-kocek.png',
+    demo: 'https://tahukocekmerona.vercel.app/',
+    code: 'https://github.com/dimasbp17/tahu-kocek-merona',
   },
 ] as const satisfies readonly {
   id: string;
   category: ProjectCategory;
   tech: readonly string[];
   gradient: string;
+  image?: string;
   demo?: string;
   code?: string;
 }[];
@@ -229,21 +216,13 @@ export const content: Record<Lang, Content> = {
           title: 'Toko Online',
           desc: 'Website e-commerce dengan katalog produk, keranjang belanja, dan alur checkout.',
         },
-        notes: {
-          title: 'Aplikasi Catatan',
-          desc: 'Aplikasi catatan dengan pencarian, label, dan penyimpanan lokal di browser.',
-        },
         news: {
           title: 'Portal Berita',
           desc: 'Portal berita dengan halaman kategori, pencarian, dan rendering sisi server.',
         },
-        landing: {
-          title: 'Landing Page Startup',
-          desc: 'Landing page responsif dengan animasi halus untuk memperkenalkan produk.',
-        },
-        weather: {
-          title: 'Aplikasi Cuaca',
-          desc: 'Menampilkan cuaca terkini dan prakiraan 5 hari berdasarkan kota yang dicari.',
+        'tahu-kocek': {
+          title: 'Tahu Kocek Merona',
+          desc: 'Landing page UMKM tahu kocek dengan cerita brand, katalog menu per level pedas, serta tautan pemesanan ke GoFood, GrabFood, ShopeeFood, dan WhatsApp.',
         },
       },
     },
@@ -362,21 +341,13 @@ export const content: Record<Lang, Content> = {
           title: 'Online Store',
           desc: 'E-commerce website with a product catalog, shopping cart, and checkout flow.',
         },
-        notes: {
-          title: 'Notes App',
-          desc: 'Notes app with search, labels, and local storage in the browser.',
-        },
         news: {
           title: 'News Portal',
           desc: 'News portal with category pages, search, and server-side rendering.',
         },
-        landing: {
-          title: 'Startup Landing Page',
-          desc: 'Responsive landing page with smooth animations to introduce a product.',
-        },
-        weather: {
-          title: 'Weather App',
-          desc: 'Shows current weather and a 5-day forecast for any searched city.',
+        'tahu-kocek': {
+          title: 'Tahu Kocek Merona',
+          desc: 'Landing page for a local tofu snack business, featuring the brand story, a menu by spice level, and ordering links to GoFood, GrabFood, ShopeeFood, and WhatsApp.',
         },
       },
     },

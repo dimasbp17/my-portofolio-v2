@@ -7,6 +7,7 @@ type Props = {
   desc: string;
   tech: readonly string[];
   gradient: string;
+  image?: string;
   demo?: string;
   code?: string;
   demoLabel: string;
@@ -21,6 +22,7 @@ const CardProject = ({
   desc,
   tech,
   gradient,
+  image,
   demo,
   code,
   demoLabel,
@@ -32,16 +34,27 @@ const CardProject = ({
         {...hoverLift}
         className="group h-full flex flex-col overflow-hidden bg-surface border border-line rounded-xl shadow-sm dark:shadow-none hover:border-blue-400/50 transition-colors duration-200"
       >
-        {/* thumbnail sementara, nanti bisa diganti screenshot proyek */}
-        <div
-          className={`relative aspect-video overflow-hidden bg-gradient-to-br ${gradient}`}
-        >
-          <div className="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
-            <Code2 className="size-12 text-white/80" />
+        {image ? (
+          <div className="aspect-video overflow-hidden border-b border-line">
+            <img
+              src={image}
+              alt={title}
+              loading="lazy"
+              className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
-          <div className="absolute -bottom-6 -right-6 size-24 rounded-full bg-white/15" />
-          <div className="absolute -top-8 -left-8 size-20 rounded-full bg-white/10" />
-        </div>
+        ) : (
+          // thumbnail sementara untuk proyek yang belum punya screenshot
+          <div
+            className={`relative aspect-video overflow-hidden bg-gradient-to-br ${gradient}`}
+          >
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+              <Code2 className="size-12 text-white/80" />
+            </div>
+            <div className="absolute -bottom-6 -right-6 size-24 rounded-full bg-white/15" />
+            <div className="absolute -top-8 -left-8 size-20 rounded-full bg-white/10" />
+          </div>
+        )}
 
         <div className="flex flex-col flex-1 p-5">
           <h3 className="font-semibold text-lg">{title}</h3>
