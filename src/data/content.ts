@@ -7,6 +7,7 @@ type Content = {
   nav: { id: string; label: string }[];
   languageLabel: string;
   themeLabel: { toLight: string; toDark: string };
+  menuLabel: { open: string; close: string };
   hero: {
     greeting: string;
     role: string;
@@ -123,6 +124,7 @@ export const content: Record<Lang, Content> = {
     ],
     languageLabel: 'Indonesia',
     themeLabel: { toLight: 'Ganti ke tema terang', toDark: 'Ganti ke tema gelap' },
+    menuLabel: { open: 'Buka menu', close: 'Tutup menu' },
     hero: {
       greeting: 'Halo, Saya Dimas Bagus Prasetyo',
       role: 'Frontend Web Developer',
@@ -248,6 +250,7 @@ export const content: Record<Lang, Content> = {
     ],
     languageLabel: 'English',
     themeLabel: { toLight: 'Switch to light theme', toDark: 'Switch to dark theme' },
+    menuLabel: { open: 'Open menu', close: 'Close menu' },
     hero: {
       greeting: "Hi, I'm Dimas Bagus Prasetyo",
       role: 'Frontend Web Developer',
