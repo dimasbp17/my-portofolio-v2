@@ -94,6 +94,14 @@ export const projects = [
     demo: 'https://tahukocekmerona.vercel.app/',
     code: 'https://github.com/dimasbp17/tahu-kocek-merona',
   },
+  {
+    id: 'cerita-tumbuh-keluarga',
+    category: 'personal',
+    tech: ['React', 'Vite', 'TypeScript', 'Supabase', 'Tailwind CSS', 'shadcn/ui', 'PWA'],
+    gradient: 'from-sky-500 to-cyan-400',
+    image: '/assets/images/projects/cerita-tumbuh-keluarga.png',
+    demo: 'https://ceritatumbuhkeluarga.vercel.app/',
+  },
 ] as const satisfies readonly {
   id: string;
   category: ProjectCategory;
@@ -226,6 +234,10 @@ export const content: Record<Lang, Content> = {
           title: 'Tahu Kocek Merona',
           desc: 'Landing page UMKM tahu kocek dengan cerita brand, katalog menu per level pedas, serta tautan pemesanan ke GoFood, GrabFood, ShopeeFood, dan WhatsApp.',
         },
+        'cerita-tumbuh-keluarga': {
+          title: 'Cerita Tumbuh Keluarga',
+          desc: 'PWA pencatat tumbuh kembang anak dan kesehatan keluarga: grafik pertumbuhan standar WHO, KBM Buku KIA 2024, jadwal imunisasi IDAI, vitamin A & obat cacing, serta BMI orang tua.',
+        },
       },
     },
     contact: {
@@ -351,6 +363,10 @@ export const content: Record<Lang, Content> = {
         'tahu-kocek': {
           title: 'Tahu Kocek Merona',
           desc: 'Landing page for a local tofu snack business, featuring the brand story, a menu by spice level, and ordering links to GoFood, GrabFood, ShopeeFood, and WhatsApp.',
+        },
+        'cerita-tumbuh-keluarga': {
+          title: 'Cerita Tumbuh Keluarga',
+          desc: 'A PWA for tracking child growth and family health: WHO growth charts, KIA 2024 weight-gain checks, IDAI immunization schedules, vitamin A & deworming rounds, and parent BMI.',
         },
       },
     },
