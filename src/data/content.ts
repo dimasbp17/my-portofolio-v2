@@ -63,27 +63,32 @@ export const projectCategories: ProjectCategory[] = ['professional', 'personal']
 
 export const projects = [
   {
-    id: 'dashboard',
+    id: 'sipeni',
     category: 'professional',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    gradient: 'from-blue-500 to-cyan-400',
-    demo: 'https://example.com',
-    code: 'https://github.com/dimasbp17',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'Axios', 'Framer Motion', 'Leaflet'],
+    gradient: 'from-blue-700 to-amber-500',
+    image: '/assets/images/projects/sipeni.png',
   },
   {
-    id: 'ecommerce',
+    id: 'smpptd',
     category: 'professional',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    gradient: 'from-violet-500 to-fuchsia-400',
-    demo: 'https://example.com',
-    code: 'https://github.com/dimasbp17',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'shadcn/ui'],
+    gradient: 'from-blue-600 to-sky-400',
+    image: '/assets/images/projects/smpptd.png',
   },
   {
-    id: 'news',
+    id: 'e-lptkdn',
     category: 'professional',
-    tech: ['Next.js', 'TypeScript', 'REST API'],
-    gradient: 'from-emerald-500 to-teal-400',
-    demo: 'https://example.com',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Redux'],
+    gradient: 'from-slate-700 to-blue-500',
+    image: '/assets/images/projects/e-lptkdn.png',
+  },
+  {
+    id: 'sidahub',
+    category: 'professional',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'Redux', 'Framer Motion'],
+    gradient: 'from-slate-800 to-indigo-400',
+    image: '/assets/images/projects/sidahub.png',
   },
   {
     id: 'tahu-kocek',
@@ -101,6 +106,38 @@ export const projects = [
     gradient: 'from-sky-500 to-cyan-400',
     image: '/assets/images/projects/cerita-tumbuh-keluarga.png',
     demo: 'https://ceritatumbuhkeluarga.vercel.app/',
+  },
+  {
+    id: 'info-gempa-cuaca',
+    category: 'personal',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Axios', 'API BMKG'],
+    gradient: 'from-slate-700 to-teal-500',
+    image: '/assets/images/projects/info-gempa-cuaca.png',
+    demo: 'https://infogempacuaca-gamma.vercel.app/',
+  },
+  {
+    id: 'e-alquran',
+    category: 'personal',
+    tech: ['Next.js', 'Tailwind CSS', 'Axios', 'EQuran.id API'],
+    gradient: 'from-emerald-600 to-teal-400',
+    image: '/assets/images/projects/e-alquran.png',
+    demo: 'https://e-alquran.vercel.app/',
+  },
+  {
+    id: 'd-movies',
+    category: 'personal',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Axios', 'TMDB API'],
+    gradient: 'from-zinc-800 to-amber-500',
+    image: '/assets/images/projects/d-movies.png',
+    demo: 'https://d-movies-omega.vercel.app/',
+  },
+  {
+    id: 'tastebite',
+    category: 'personal',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'TheMealDB API'],
+    gradient: 'from-orange-600 to-amber-400',
+    image: '/assets/images/projects/tastebite.png',
+    demo: 'https://taste-bite-bice.vercel.app/',
   },
 ] as const satisfies readonly {
   id: string;
@@ -219,17 +256,21 @@ export const content: Record<Lang, Content> = {
       tabs: { professional: 'Profesional', personal: 'Personal' },
       empty: 'Belum ada proyek di kategori ini.',
       items: {
-        dashboard: {
-          title: 'Dashboard Analitik',
-          desc: 'Dashboard penjualan interaktif dengan grafik, filter periode, dan ringkasan performa bisnis.',
+        sipeni: {
+          title: 'SIPENI',
+          desc: 'Sistem informasi peringatan dini bencana BPBD Kabupaten Demak: peta sebaran dan daerah rawan, statistik kejadian, laporan bencana dari masyarakat, monitoring sungai, tempat pengungsian, serta manajemen berita.',
         },
-        ecommerce: {
-          title: 'Toko Online',
-          desc: 'Website e-commerce dengan katalog produk, keranjang belanja, dan alur checkout.',
+        smpptd: {
+          title: 'SMPPTD — Komdigi',
+          desc: 'Sistem Manajemen Penomoran Penyiaran Televisi Digital milik Kementerian Komunikasi dan Digital untuk penerbitan penomoran (LCN), informasi wilayah siaran, regulasi, dan berita penyiaran.',
         },
-        news: {
-          title: 'Portal Berita',
-          desc: 'Portal berita dengan halaman kategori, pencarian, dan rendering sisi server.',
+        'e-lptkdn': {
+          title: 'e-LPTKDN — Kemnaker',
+          desc: 'Layanan perizinan lembaga penempatan tenaga kerja dalam negeri Kementerian Ketenagakerjaan, termasuk pendaftaran perusahaan/lembaga dan pencarian lembaga berizin resmi.',
+        },
+        sidahub: {
+          title: 'SIDAHUB',
+          desc: 'Sistem informasi Dinas Perhubungan Kabupaten Halmahera Timur: retribusi dan ticketing pelabuhan, presensi dan kepegawaian, arsip surat, serta informasi publik.',
         },
         'tahu-kocek': {
           title: 'Tahu Kocek Merona',
@@ -238,6 +279,22 @@ export const content: Record<Lang, Content> = {
         'cerita-tumbuh-keluarga': {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'PWA pencatat tumbuh kembang anak dan kesehatan keluarga: grafik pertumbuhan standar WHO, KBM Buku KIA 2024, jadwal imunisasi IDAI, vitamin A & obat cacing, serta BMI orang tua.',
+        },
+        'info-gempa-cuaca': {
+          title: 'Info Gempa & Cuaca',
+          desc: 'Pantau gempa bumi terkini, prakiraan cuaca hingga tingkat desa, dan peringatan dini cuaca di Indonesia secara real-time dari data terbuka BMKG.',
+        },
+        'e-alquran': {
+          title: "E-Alqur'an",
+          desc: "Baca dan dengarkan 114 surah lengkap dengan terjemahan dan murottal, ditambah doa harian, bacaan shalat, dan Asmaul Husna.",
+        },
+        'd-movies': {
+          title: 'D-Movies',
+          desc: 'Jelajahi film, serial TV, dan tokoh dari TMDB: daftar trending, pencarian, trailer, serta watchlist yang tersimpan di browser.',
+        },
+        tastebite: {
+          title: 'Tastebite',
+          desc: 'Kumpulan resep dari seluruh dunia dengan pencarian berdasarkan bahan, resep tersimpan, daftar belanja, dan pilihan bahasa ID/EN.',
         },
       },
     },
@@ -349,17 +406,21 @@ export const content: Record<Lang, Content> = {
       tabs: { professional: 'Professional', personal: 'Personal' },
       empty: 'No projects in this category yet.',
       items: {
-        dashboard: {
-          title: 'Analytics Dashboard',
-          desc: 'Interactive sales dashboard with charts, period filters, and business performance summaries.',
+        sipeni: {
+          title: 'SIPENI',
+          desc: 'Disaster early-warning system for BPBD Demak Regency: incident and hazard-zone maps, disaster statistics, public incident reports, river monitoring, evacuation sites, and news management.',
         },
-        ecommerce: {
-          title: 'Online Store',
-          desc: 'E-commerce website with a product catalog, shopping cart, and checkout flow.',
+        smpptd: {
+          title: 'SMPPTD — Komdigi',
+          desc: 'Digital TV broadcast numbering management system for the Ministry of Communication and Digital Affairs, covering channel number (LCN) issuance, coverage areas, regulations, and broadcasting news.',
         },
-        news: {
-          title: 'News Portal',
-          desc: 'News portal with category pages, search, and server-side rendering.',
+        'e-lptkdn': {
+          title: 'e-LPTKDN — Kemnaker',
+          desc: 'Licensing service for domestic job placement agencies at the Ministry of Manpower, including company registration and a public search of officially licensed agencies.',
+        },
+        sidahub: {
+          title: 'SIDAHUB',
+          desc: 'Integrated platform for the Transportation Agency of East Halmahera Regency: port levies and ticketing, staff attendance and HR, document archiving, and public information.',
         },
         'tahu-kocek': {
           title: 'Tahu Kocek Merona',
@@ -368,6 +429,22 @@ export const content: Record<Lang, Content> = {
         'cerita-tumbuh-keluarga': {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'A PWA for tracking child growth and family health: WHO growth charts, KIA 2024 weight-gain checks, IDAI immunization schedules, vitamin A & deworming rounds, and parent BMI.',
+        },
+        'info-gempa-cuaca': {
+          title: 'Earthquake & Weather Info',
+          desc: "Real-time earthquake reports, village-level weather forecasts, and severe weather warnings across Indonesia, powered by BMKG's open data.",
+        },
+        'e-alquran': {
+          title: "E-Alqur'an",
+          desc: 'Read and listen to all 114 surahs with translations and murottal audio, plus daily prayers, salah recitations, and Asmaul Husna.',
+        },
+        'd-movies': {
+          title: 'D-Movies',
+          desc: 'Browse movies, TV shows, and people from TMDB: trending lists, search, trailers, and a watchlist saved in the browser.',
+        },
+        tastebite: {
+          title: 'Tastebite',
+          desc: 'Recipes from around the world with search by ingredient, saved recipes, a shopping list, and ID/EN language options.',
         },
       },
     },
