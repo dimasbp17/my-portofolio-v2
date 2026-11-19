@@ -104,7 +104,7 @@ const Kontak = () => {
         </Button>
       </motion.div>
       <motion.p variants={fadeUp} className="text-center text-ink-muted text-xs mt-16">
-        © {new Date().getFullYear()} Dimas Bagus Prasetyo. {t.contact.footer}
+        © {new Date().getFullYear()} Dimas Bagus Prasetyo
       </motion.p>
     </motion.div>
   );

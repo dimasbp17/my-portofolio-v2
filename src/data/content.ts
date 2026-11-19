@@ -51,7 +51,6 @@ type Content = {
     cta: string;
     locationLabel: string;
     location: string;
-    footer: string;
   };
 };
 
@@ -305,7 +304,6 @@ export const content: Record<Lang, Content> = {
       cta: 'Kirim Email',
       locationLabel: 'Lokasi',
       location: 'Indonesia',
-      footer: 'Dibuat dengan React & Tailwind CSS.',
     },
   },
 
@@ -455,7 +453,6 @@ export const content: Record<Lang, Content> = {
       cta: 'Send Email',
       locationLabel: 'Location',
       location: 'Indonesia',
-      footer: 'Built with React & Tailwind CSS.',
     },
   },
 };
