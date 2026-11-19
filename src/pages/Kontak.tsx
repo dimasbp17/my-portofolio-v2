@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Send } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Send,
+} from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import { Button } from '@/components/ui/button';
 import { contactLinks } from '@/data/content';
@@ -16,6 +24,12 @@ const Kontak = () => {
       label: 'Email',
       value: contactLinks.email,
       href: `mailto:${contactLinks.email}`,
+    },
+    {
+      icon: MessageCircle,
+      label: 'WhatsApp',
+      value: '0821-4620-2762',
+      href: `https://wa.me/${contactLinks.whatsapp}`,
     },
     {
       icon: Linkedin,

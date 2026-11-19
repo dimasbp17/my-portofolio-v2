@@ -116,6 +116,7 @@ export type ProjectId = (typeof projects)[number]['id'];
 
 export const contactLinks = {
   email: 'dimasbp.tech@gmail.com',
+  whatsapp: '6282146202762',
   linkedin: 'https://www.linkedin.com/in/dimas-bagus-prasetyo-528a7b2a0/',
   github: 'https://github.com/dimasbp17',
 };
