@@ -107,6 +107,14 @@ export const projects = [
     demo: 'https://ceritatumbuhkeluarga.vercel.app/',
   },
   {
+    id: 'galaxia-animalium',
+    category: 'personal',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'TanStack Query', 'Axios', 'iNaturalist API', 'Wikipedia API'],
+    gradient: 'from-emerald-900 to-lime-500',
+    image: '/assets/images/projects/galaxia-animalium.png',
+    demo: 'https://galaxianimalium.vercel.app/',
+  },
+  {
     id: 'info-gempa-cuaca',
     category: 'personal',
     tech: ['React', 'Vite', 'Tailwind CSS', 'Axios', 'API BMKG'],
@@ -279,6 +287,10 @@ export const content: Record<Lang, Content> = {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'PWA pencatat tumbuh kembang anak dan kesehatan keluarga: grafik pertumbuhan standar WHO, KBM Buku KIA 2024, jadwal imunisasi IDAI, vitamin A & obat cacing, serta BMI orang tua.',
         },
+        'galaxia-animalium': {
+          title: 'Galaxia Animalium',
+          desc: 'Ensiklopedia visual satwa dunia berbahasa Indonesia dari data terbuka iNaturalist dan Wikipedia: pencarian dan filter spesies, foto pengamatan asli, klasifikasi taksonomi, peta sebaran, dan status konservasi IUCN.',
+        },
         'info-gempa-cuaca': {
           title: 'Info Gempa & Cuaca',
           desc: 'Pantau gempa bumi terkini, prakiraan cuaca hingga tingkat desa, dan peringatan dini cuaca di Indonesia secara real-time dari data terbuka BMKG.',
@@ -427,6 +439,10 @@ export const content: Record<Lang, Content> = {
         'cerita-tumbuh-keluarga': {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'A PWA for tracking child growth and family health: WHO growth charts, KIA 2024 weight-gain checks, IDAI immunization schedules, vitamin A & deworming rounds, and parent BMI.',
+        },
+        'galaxia-animalium': {
+          title: 'Galaxia Animalium',
+          desc: "A visual encyclopedia of the world's wildlife in Indonesian, built on open data from iNaturalist and Wikipedia: species search and filters, real observation photos, taxonomy, distribution maps, and IUCN conservation status.",
         },
         'info-gempa-cuaca': {
           title: 'Earthquake & Weather Info',
