@@ -107,6 +107,14 @@ export const projects = [
     demo: 'https://ceritatumbuhkeluarga.vercel.app/',
   },
   {
+    id: 'lumbung',
+    category: 'personal',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'PWA', 'Framer Motion'],
+    gradient: 'from-emerald-900 to-emerald-500',
+    image: '/assets/images/projects/lumbung.png',
+    demo: 'https://lumbung.dimasbp.my.id/',
+  },
+  {
     id: 'galaxia-animalium',
     category: 'personal',
     tech: ['React', 'Vite', 'Tailwind CSS', 'TanStack Query', 'Axios', 'iNaturalist API', 'Wikipedia API'],
@@ -287,6 +295,10 @@ export const content: Record<Lang, Content> = {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'PWA pencatat tumbuh kembang anak dan kesehatan keluarga: grafik pertumbuhan standar WHO, KBM Buku KIA 2024, jadwal imunisasi IDAI, vitamin A & obat cacing, serta BMI orang tua.',
         },
+        lumbung: {
+          title: 'Lumbung',
+          desc: 'PWA pencatat keuangan keluarga yang dipakai bersama suami-istri: saldo dompet otomatis, anggaran dan periode ikut tanggal gajian, tagihan rutin, utang-piutang, tujuan tabungan, foto struk, serta laporan bulanan/tahunan dengan ekspor Excel dan PDF.',
+        },
         'galaxia-animalium': {
           title: 'Galaxia Animalium',
           desc: 'Ensiklopedia visual satwa dunia berbahasa Indonesia dari data terbuka iNaturalist dan Wikipedia: pencarian dan filter spesies, foto pengamatan asli, klasifikasi taksonomi, peta sebaran, dan status konservasi IUCN.',
@@ -439,6 +451,10 @@ export const content: Record<Lang, Content> = {
         'cerita-tumbuh-keluarga': {
           title: 'Cerita Tumbuh Keluarga',
           desc: 'A PWA for tracking child growth and family health: WHO growth charts, KIA 2024 weight-gain checks, IDAI immunization schedules, vitamin A & deworming rounds, and parent BMI.',
+        },
+        lumbung: {
+          title: 'Lumbung',
+          desc: 'A family finance PWA shared by husband and wife: automatic wallet balances, budgets with payday-based periods, recurring bills, debts and loans, savings goals, receipt photos, and monthly/yearly reports with Excel and PDF export.',
         },
         'galaxia-animalium': {
           title: 'Galaxia Animalium',
